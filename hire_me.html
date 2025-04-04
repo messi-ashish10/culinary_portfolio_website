@@ -25,15 +25,25 @@
   <header class="bg-gray-900 text-white fixed top-0 w-full z-50 shadow">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <h1 class="text-xl font-bold">My Portfolio</h1>
-      <nav>
-        <ul class="flex space-x-6">
-          <li><a href="index.html" class="hover:text-teal-400 transition">Home</a></li>
-          <li><a href="portfolio.html" class="hover:text-teal-400 transition">Portfolio</a></li>
-          <li><a href="internship.html" class="hover:text-teal-400 transition">Internship</a></li>
-          <li><a href="interview.html" class="hover:text-teal-400 transition">Interview Qs</a></li>
-        </ul>
+      <div class="md:hidden">
+        <button id="menuToggle" class="text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <nav id="desktopNav" class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-teal-400 transition">Home</a>
+        <a href="portfolio.html" class="hover:text-teal-400 transition">Portfolio</a>
+        <a href="internship.html" class="hover:text-teal-400 transition">Internship</a>
+        <a href="interview.html" class="hover:text-teal-400 transition">Interview Qs</a>
       </nav>
-      <button id="themeToggle" class="ml-4 bg-teal-500 text-white px-3 py-1 rounded hover:bg-teal-600 transition">Toggle Theme</button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-gray-800 text-white">
+      <a href="index.html" class="block py-2 hover:text-teal-400">Home</a>
+      <a href="portfolio.html" class="block py-2 hover:text-teal-400">Portfolio</a>
+      <a href="internship.html" class="block py-2 hover:text-teal-400">Internship</a>
+      <a href="interview.html" class="block py-2 hover:text-teal-400">Interview Qs</a>
     </div>
   </header>
 
@@ -111,62 +121,43 @@
 
   <footer class="mt-16 py-10 bg-gray-900 text-white text-center">
     <div class="space-y-6">
-  
       <h2 class="text-2xl font-bold text-teal-400">Contact Information</h2>
-  
-      <!-- Social Media Icons -->
       <div class="flex justify-center space-x-8">
-        <!-- Instagram -->
         <a href="https://www.instagram.com/uttam.acharya.9615?igsh=MWVzZGJ6NXp4ODFjbw%3D%3D&utm_source=qr" target="_blank" class="hover:text-teal-400 transition">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="w-8 h-8 invert">
         </a>
-        <!-- Facebook -->
         <a href="https://www.facebook.com/uttam.acharya.9615?mibextid=wwXIfr&mibextid=wwXIfr" target="_blank" class="hover:text-teal-400 transition">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" class="w-8 h-8 invert">
         </a>
-        <!-- TikTok -->
         <a href="https://www.tiktok.com/@uttamacharya_official?_t=ZS-8vEn67UD6tG&_r=1" target="_blank" class="hover:text-teal-400 transition">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" class="w-8 h-8 invert">
         </a>
-        <!-- Gmail -->
         <a href="mailto:yourname@gmail.com" class="hover:text-teal-400 transition">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail" class="w-8 h-8 invert">
         </a>
       </div>
-  
-      <!-- Contact Info -->
       <div class="text-sm space-y-1">
-        <p>Email: <a href="acharyauttam276@gmail.com" class="text-teal-400 hover:underline">acharyauttam276@gmail.com</a></p>
+        <p>Email: <a href="mailto:acharyauttam276@gmail.com" class="text-teal-400 hover:underline">acharyauttam276@gmail.com</a></p>
         <p>Phone: <a href="tel:+14376608334" class="text-teal-400 hover:underline">+1 437 660 8334</a></p>
       </div>
-  
       <p class="text-xs text-gray-400 mt-4">&copy; 2025 Uttam Acharya. All Rights Reserved.</p>
-  
     </div>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+
     const backToTop = document.getElementById('backToTop');
     window.addEventListener('scroll', () => {
       backToTop.classList.toggle('hidden', window.scrollY <= 300);
     });
     backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-    const themeToggle = document.getElementById('themeToggle');
-    const body = document.getElementById('body');
-    const userTheme = localStorage.getItem('theme');
-    if (userTheme === 'dark') {
-      body.classList.replace('bg-gray-100', 'bg-gray-900');
-      body.classList.replace('text-gray-800', 'text-white');
-    }
-    themeToggle.addEventListener('click', () => {
-      body.classList.toggle('bg-gray-100');
-      body.classList.toggle('text-gray-800');
-      body.classList.toggle('bg-gray-900');
-      body.classList.toggle('text-white');
-      localStorage.setItem('theme', body.classList.contains('bg-gray-900') ? 'dark' : 'light');
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuToggle?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
     });
   </script>
 </body>

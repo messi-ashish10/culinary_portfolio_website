@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interview Questions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    body::before {
+      content: "";
+      background: url('img16.jpeg') no-repeat center center/cover;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.1; /* Adjust for visibility */
+      z-index: -1;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 transition-colors duration-300" id="body">
+  <header class="bg-gray-900 text-white fixed top-0 w-full z-50 shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">My Portfolio</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="hover:text-teal-400 transition">Home</a></li>
+          <li><a href="hire_me.html" class="hover:text-teal-400 transition">Hire Me</a></li>
+          <li><a href="portfolio.html" class="hover:text-teal-400 transition">Portfolio</a></li>
+          <li><a href="internship.html" class="hover:text-teal-400 transition">Internship</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="ml-4 bg-teal-500 text-white px-3 py-1 rounded hover:bg-teal-600 transition">Toggle Theme</button>
+    </div>
+  </header>
+
+  <main class="pt-32 max-w-4xl mx-auto px-4 animate-fadeIn" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6 text-center">Interview Questions & Answers</h2>
+    <div class="space-y-6">
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold text-xl mb-2">1. Can you tell us a little about yourself and your interest in cooking?</h3>
+        <p>I’m currently a culinary student at Humber College, and I’ve always loved cooking. Growing up, I enjoyed helping in the kitchen. Now, I’m excited to take my passion to the next level and gain hands-on experience in a professional kitchen like yours.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold text-xl mb-2">2. Are you familiar with kitchen equipment like grills, fryers, ovens, and steamers?</h3>
+        <p>Yes, I’ve worked with grills, fryers, ovens, and steamers during my practical classes at Humber College. I’m comfortable using them and understand how to operate them safely and efficiently. I’m also eager to learn more about any specific equipment used here at DoubleTree by Hilton.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold text-xl mb-2">3. Are you comfortable taking directions from head chef or kitchen manager?</h3>
+        <p>Absolutely. I understand that the head chef and kitchen manager have a lot of experience, and I’m here to learn from them. I’m comfortable following instructions and appreciate feedback to help me improve my skills.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold text-xl mb-2">4. How do you prioritize tasks when the kitchen gets busy?</h3>
+        <p>When the kitchen gets busy, I focus on what needs to be done first. For example, I’ll start dishes that take longer to cook and prep ingredients that are needed right away. I also make sure to communicate with my team to stay organized and keep things running smoothly.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold text-xl mb-2">5. How do you handle cross-contamination in the kitchen?</h3>
+        <p>I handle cross-contamination by using separate cutting boards and utensils for raw meats, vegetables, and cooked foods. I also wash my hands often and clean surfaces regularly. Food safety is very important to me, and I always follow proper hygiene practices.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold text-xl mb-2">6. What would you do if you noticed a coworker wasn’t following food safety protocols?</h3>
+        <p>If I noticed a coworker not following food safety protocols, I would kindly remind them of the correct procedure. If it continued, I would let the head chef or kitchen manager know to make sure we’re keeping the kitchen safe for everyone.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold text-xl mb-2">7. Are you willing to learn new skills or cuisines on the job?</h3>
+        <p>Yes, I’m very willing to learn new skills and cuisines. I’m here to gain experience and improve, so I’m open to trying new things and taking on challenges. I’m excited to learn from the team here at DoubleTree by Hilton.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold text-xl mb-2">8. If a customer has a food allergy, how would you ensure their meals are safe?</h3>
+        <p>If a customer has a food allergy, I will carefully check their order and make sure their meal is prepared safely. I’d use separate utensils and equipment to avoid cross-contact, double-check ingredients, and confirm with the team to ensure everything is done correctly.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold text-xl mb-2">9. How do you handle stress in a high-pressure environment?</h3>
+        <p>I handle stress by staying calm and focused. I take things one step at a time, prioritize my tasks, and communicate with my team. I enjoy working in fast-paced environments and find it rewarding to see everything come together during a busy service.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold text-xl mb-2">10. Do you have any questions for us about the role or the kitchen?</h3>
+        <p>Yes, thank you for these opportunities, I would like to ask what’s one skill you hope interns take away from this experience? And also, how do interns receive feedback, and is there a mentorship system in place?</p>
+      </div>
+    </div>
+  </main>
+
+  <button id="backToTop" class="fixed bottom-8 right-8 bg-teal-500 text-white px-4 py-2 rounded-full shadow-lg hidden">⬆ Top</button>
+
+  <footer class="mt-16 py-10 bg-gray-900 text-white text-center">
+    <div class="space-y-6">
+  
+      <h2 class="text-2xl font-bold text-teal-400">Contact Information</h2>
+  
+      <!-- Social Media Icons -->
+      <div class="flex justify-center space-x-8">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/uttam.acharya.9615?igsh=MWVzZGJ6NXp4ODFjbw%3D%3D&utm_source=qr" target="_blank" class="hover:text-teal-400 transition">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="w-8 h-8 invert">
+        </a>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/uttam.acharya.9615?mibextid=wwXIfr&mibextid=wwXIfr" target="_blank" class="hover:text-teal-400 transition">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" class="w-8 h-8 invert">
+        </a>
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@uttamacharya_official?_t=ZS-8vEn67UD6tG&_r=1" target="_blank" class="hover:text-teal-400 transition">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" class="w-8 h-8 invert">
+        </a>
+        <!-- Gmail -->
+        <a href="mailto:yourname@gmail.com" class="hover:text-teal-400 transition">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail" class="w-8 h-8 invert">
+        </a>
+      </div>
+  
+      <!-- Contact Info -->
+      <div class="text-sm space-y-1">
+        <p>Email: <a href="acharyauttam276@gmail.com" class="text-teal-400 hover:underline">acharyauttam276@gmail.com</a></p>
+        <p>Phone: <a href="tel:+14376608334" class="text-teal-400 hover:underline">+1 437 660 8334</a></p>
+      </div>
+  
+      <p class="text-xs text-gray-400 mt-4">&copy; 2025 Uttam Acharya. All Rights Reserved.</p>
+  
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('hidden', window.scrollY <= 300);
+    });
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.getElementById('body');
+    const userTheme = localStorage.getItem('theme');
+    if (userTheme === 'dark') {
+      body.classList.replace('bg-gray-100', 'bg-gray-900');
+      body.classList.replace('text-gray-800', 'text-white');
+    }
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('bg-gray-100');
+      body.classList.toggle('text-gray-800');
+      body.classList.toggle('bg-gray-900');
+      body.classList.toggle('text-white');
+      localStorage.setItem('theme', body.classList.contains('bg-gray-900') ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>

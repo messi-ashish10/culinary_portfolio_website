@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Experience</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    body::before {
+      content: "";
+      background: url('img16.jpeg') no-repeat center center/cover;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.1; /* Adjust for visibility */
+      z-index: -1;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 transition-colors duration-300" id="body">
+  <header class="bg-gray-900 text-white fixed top-0 w-full z-50 shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">My Portfolio</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="hover:text-teal-400 transition">Home</a></li>
+          <li><a href="hire_me.html" class="hover:text-teal-400 transition">Hire Me</a></li>
+          <li><a href="portfolio.html" class="hover:text-teal-400 transition">Portfolio</a></li>
+          <li><a href="interview.html" class="hover:text-teal-400 transition">Interview Qs</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="ml-4 bg-teal-500 text-white px-3 py-1 rounded hover:bg-teal-600 transition">Toggle Theme</button>
+    </div>
+  </header>
+
+  <main class="pt-32 max-w-4xl mx-auto px-4 animate-fadeIn" data-aos="fade-up">
+
+    <!-- Location Section -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-2 text-center">Location</h2>
+      <p class="text-center mb-4">162 Cumberland Street, Toronto, ON</p>
+      <div class="w-full h-64 rounded overflow-hidden shadow">
+        <iframe
+          class="w-full h-full"
+          src="https://www.google.com/maps?q=162+Cumberland+Street,+Toronto,+ON&output=embed"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Internship Content -->
+    <h2 class="text-3xl font-bold mb-6 text-center">Internship at Alobar Yorkville</h2>
+    <div class="bg-white shadow rounded p-6">
+    <p class="text-lg text-gray-700">
+        As a culinary student, I am interning at <strong>Alobar Yorkville</strong>, a renowned restaurant known for its refined yet approachable dining.
+        This experience allows me to hone my skills, learn from seasoned chefs, and gain hands-on exposure to high-quality food preparation and kitchen operations.
+    </p>
+    </div>
+
+    <!-- Restaurant Photo Gallery -->
+    <section class="mt-12" data-aos="fade-up">
+        <h3 class="text-2xl font-bold mb-4 text-center">Inside Alobar Yorkville</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto">
+        <div class="overflow-hidden rounded shadow">
+            <img src="img2.jpeg"
+                alt="Dining Room"
+                class="w-full h-64 object-cover">
+        </div>
+        <div class="overflow-hidden rounded shadow">
+            <img src="img3.jpeg"
+                alt="Seating Area"
+                class="w-full h-64 object-cover">
+        </div>
+        <div class="overflow-hidden rounded shadow">
+            <img src="img4.jpeg"
+                alt="Open Kitchen"
+                class="w-full h-64 object-cover">
+        </div>
+        <div class="overflow-hidden rounded shadow">
+            <img src="img5.jpeg"
+                alt="Bar and Lounge"
+                class="w-full h-64 object-cover">
+        </div>
+        </div>
+        <p class="text-center text-sm text-gray-500 mt-4">Elegant ambiance and modern kitchen design at Alobar Yorkville.</p>
+    </section>
+    
+  </main>
+
+  <button id="backToTop" class="fixed bottom-8 right-8 bg-teal-500 text-white px-4 py-2 rounded-full shadow-lg hidden">⬆ Top</button>
+
+  <footer class="mt-16 py-10 bg-gray-900 text-white text-center">
+    <div class="space-y-6">
+  
+      <h2 class="text-2xl font-bold text-teal-400">Contact Information</h2>
+  
+      <!-- Social Media Icons -->
+      <div class="flex justify-center space-x-8">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/uttam.acharya.9615?igsh=MWVzZGJ6NXp4ODFjbw%3D%3D&utm_source=qr" target="_blank" class="hover:text-teal-400 transition">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="w-8 h-8 invert">
+        </a>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/uttam.acharya.9615?mibextid=wwXIfr&mibextid=wwXIfr" target="_blank" class="hover:text-teal-400 transition">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" class="w-8 h-8 invert">
+        </a>
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@uttamacharya_official?_t=ZS-8vEn67UD6tG&_r=1" target="_blank" class="hover:text-teal-400 transition">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" class="w-8 h-8 invert">
+        </a>
+        <!-- Gmail -->
+        <a href="mailto:yourname@gmail.com" class="hover:text-teal-400 transition">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail" class="w-8 h-8 invert">
+        </a>
+      </div>
+  
+      <!-- Contact Info -->
+      <div class="text-sm space-y-1">
+        <p>Email: <a href="acharyauttam276@gmail.com" class="text-teal-400 hover:underline">acharyauttam276@gmail.com</a></p>
+        <p>Phone: <a href="tel:+14376608334" class="text-teal-400 hover:underline">+1 437 660 8334</a></p>
+      </div>
+  
+      <p class="text-xs text-gray-400 mt-4">&copy; 2025 Uttam Acharya. All Rights Reserved.</p>
+  
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('hidden', window.scrollY <= 300);
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.getElementById('body');
+    const userTheme = localStorage.getItem('theme');
+    if (userTheme === 'dark') {
+      body.classList.replace('bg-gray-100', 'bg-gray-900');
+      body.classList.replace('text-gray-800', 'text-white');
+    }
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('bg-gray-100');
+      body.classList.toggle('text-gray-800');
+      body.classList.toggle('bg-gray-900');
+      body.classList.toggle('text-white');
+      localStorage.setItem('theme', body.classList.contains('bg-gray-900') ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
